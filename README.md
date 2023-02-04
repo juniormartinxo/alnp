@@ -4,8 +4,12 @@ Repositório para armazenar o código gerado durante a realização do Módulo 4
 
 Site do curso: [https://www.otaviolemos.com.br/](https://www.otaviolemos.com.br/)
 
+### Objetivo
+
 > Ao final deste módulo o objetivo é compreender como usar arquitetura limpa durante o desenvolvimenyo de uma API com NodeJS
 
+
+### Aulas
 - Aula 01 - Processo de desenvolvimento
 - Aula 02 - TDD, primeiro teste e UserData
 - Aula 03 - Criando o fake object InMemoryUserRepository
