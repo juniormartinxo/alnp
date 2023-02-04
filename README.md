@@ -1,4 +1,4 @@
-# ALNP - Arquitetura Limpa Na Prática
+# CALNP - Curso de Arquitetura Limpa Na Prática
 
 Repositório para armazenar o código gerado durante a realização ao Módulo 4 do Curso de Arquitetura Limpa na Prática do Professor Otávio Lemos
 
