@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Repositório para armazenar o código gerado dirante ao Módulo 4 do Curso de Arquitetura Limpa na Prática do Professor Otávio Lemos",
   "main": "main.ts",
-  "type": "module",
   "scripts": {
     "test": "jest",
     "prepare": "husky install",
