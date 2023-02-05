@@ -36,6 +36,15 @@ Fazer um rascunho de modelo de domínio.
 - Criado o repo no Github
 - Criado o primeiro teste
 
+#### A aplicação
+
+Será desenvolvido uma API que terá como funcionalidade armazenar os dados de um usuário em uma lista de e-mails e devolve o link para que este usuário receba um "prêmio".
+
+#### Requerimentos da aplicação:
+
+1. Registrar o usuário na `mailing list`
+2. Envia o e-mail para o usário com o bônus
+
 ### Aula 03 - Criando o fake object InMemoryUserRepository
 
 ### Aula 04 - Uma correção e uma refatoração
