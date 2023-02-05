@@ -32,6 +32,10 @@ Fazer um rascunho de modelo de domínio.
 
 ### Aula 02 - TDD, primeiro teste e UserData
 
+- Leis do TDD
+- Criado o repo no Github
+- Criado o primeiro teste
+
 ### Aula 03 - Criando o fake object InMemoryUserRepository
 
 ### Aula 04 - Uma correção e uma refatoração
