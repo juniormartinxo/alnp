@@ -4,7 +4,8 @@
   "description": "Repositório para armazenar o código gerado dirante ao Módulo 4 do Curso de Arquitetura Limpa na Prática do Professor Otávio Lemos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "git-commit-msg-linter": "^4.5.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "typescript": "^4.9.5"
   }
 }
