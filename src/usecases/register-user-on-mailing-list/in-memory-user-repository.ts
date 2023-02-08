@@ -2,22 +2,42 @@ import { UserRepository } from './ports/user.repository'
 import { UserDataInterface } from './user-data.interface'
 
 export class InMemoryUserRepository implements UserRepository {
-  constructor(private users: UserDataInterface[]) {}
+  private repository: UserDataInterface[]
 
-  create(user: UserDataInterface): Promise<void> {
+  constructor(private users: UserDataInterface[]) {
+    this.repository = users
+  }
+
+  async create(user: UserDataInterface): Promise<void> {
+    const exists = await this.exists(user)
+
+    if (!exists) {
+      this.repository.push(user)
+    } else {
+      throw new Error('User already exists')
+    }
+  }
+
+  async findUserByEmail(email: string): Promise<UserDataInterface> {
+    const user = this.users.find(user => user.email === email)
+
+    if (user === undefined) {
+      return null
+    }
+
+    return user
+  }
+
+  async findAllUsers(): Promise<UserDataInterface[]> {
     throw new Error('Method not implemented.')
   }
 
-  findUserByEmail(email: string): Promise<UserDataInterface> {
-    return null //throw new Error('Method not implemented.')
-  }
+  async exists(user: UserDataInterface): Promise<boolean> {
+    if ((await this.findUserByEmail(user.email)) === null) {
+      return false
+    }
 
-  findAllUsers(): Promise<UserDataInterface[]> {
-    throw new Error('Method not implemented.')
-  }
-
-  exists(user: UserDataInterface): Promise<boolean> {
-    throw new Error('Method not implemented.')
+    return true
   }
 
   async save(userData: UserDataInterface): Promise<void> {
