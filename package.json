@@ -63,7 +63,9 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "clearMocks": true,
+    "coverageProvider": "v8"
   },
   "config": {
     "commitizen": {
