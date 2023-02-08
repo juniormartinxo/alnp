@@ -9,4 +9,17 @@ describe('In memory user repository', () => {
 
     expect(user).toBeNull()
   })
+
+  it('should return user if user it is found in the repository', async () => {
+    const user: UserDataInterface = {
+      name: 'John Doe',
+      email: 'john_doe@app.com',
+    }
+    const users: UserDataInterface[] = []
+    const userRepo = new InMemoryUserRepository(users)
+    await userRepo.create(user)
+    const findUser = await userRepo.findUserByEmail('john_doe@app.com')
+
+    expect(findUser.name).toEqual(user.name)
+  })
 })
